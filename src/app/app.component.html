@@ -1,0 +1,60 @@
+<!-- mat-sidenav-container -->
+<mat-sidenav-container class="mat-app-background" [ngClass]="{ 'dark-theme': isDark }">
+    <!-- mat-sidenav -->
+    <mat-sidenav #drawer fixedInViewport [mode]="(isHandset$ | async) ? 'over' : 'side'" [opened]="(isHandset$ | async) === false">
+        <mat-toolbar>Header Menu</mat-toolbar>
+        <mat-nav-list>
+            <a mat-list-item href="">Link 1</a>
+            <a mat-list-item href="">Link 3</a>
+            <a mat-list-item href="">Link 2</a>
+        </mat-nav-list>
+    </mat-sidenav>
+    <!-- mat-sidenav-content -->
+    <mat-sidenav-content>
+        <!-- mat-toolbar -->
+        <mat-toolbar color="primary">
+            <button mat-icon-button (click)="drawer.toggle()">
+                <mat-icon>menu</mat-icon>
+            </button>
+            <span>App</span>
+            <div class="example-spacer"></div>
+            <button mat-raised-button color="accent">Button</button>
+            <button mat-icon-button (click)="toggleTheme()">
+                <mat-icon *ngIf="isDark">light_mode</mat-icon>
+                <mat-icon *ngIf="!isDark">dark_mode</mat-icon>
+            </button>
+        </mat-toolbar>
+
+        <!-- content here -->
+        <div>
+            <h1>Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam ducimus repellendus accusantium error placeat, maxime tenetur minima excepturi quos porro quidem, non quae assumenda rerum adipisci beatae sapiente repellat voluptatum?</h1>
+            <h1>Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam ducimus repellendus accusantium error placeat, maxime tenetur minima excepturi quos porro quidem, non quae assumenda rerum adipisci beatae sapiente repellat voluptatum?</h1>
+            <h1>Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam ducimus repellendus accusantium error placeat, maxime tenetur minima excepturi quos porro quidem, non quae assumenda rerum adipisci beatae sapiente repellat voluptatum?</h1>
+            <h1>Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam ducimus repellendus accusantium error placeat, maxime tenetur minima excepturi quos porro quidem, non quae assumenda rerum adipisci beatae sapiente repellat voluptatum?</h1>
+            <h1>Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam ducimus repellendus accusantium error placeat, maxime tenetur minima excepturi quos porro quidem, non quae assumenda rerum adipisci beatae sapiente repellat voluptatum?</h1>
+            <h1>Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam ducimus repellendus accusantium error placeat, maxime tenetur minima excepturi quos porro quidem, non quae assumenda rerum adipisci beatae sapiente repellat voluptatum?</h1>
+            <h1>Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam ducimus repellendus accusantium error placeat, maxime tenetur minima excepturi quos porro quidem, non quae assumenda rerum adipisci beatae sapiente repellat voluptatum?</h1>
+            <h1>Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam ducimus repellendus accusantium error placeat, maxime tenetur minima excepturi quos porro quidem, non quae assumenda rerum adipisci beatae sapiente repellat voluptatum?</h1>
+            <h1>Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam ducimus repellendus accusantium error placeat, maxime tenetur minima excepturi quos porro quidem, non quae assumenda rerum adipisci beatae sapiente repellat voluptatum?</h1>
+            <h1>Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam ducimus repellendus accusantium error placeat, maxime tenetur minima excepturi quos porro quidem, non quae assumenda rerum adipisci beatae sapiente repellat voluptatum?</h1>
+            <h1>Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam ducimus repellendus accusantium error placeat, maxime tenetur minima excepturi quos porro quidem, non quae assumenda rerum adipisci beatae sapiente repellat voluptatum?</h1>
+            <h1>Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam ducimus repellendus accusantium error placeat, maxime tenetur minima excepturi quos porro quidem, non quae assumenda rerum adipisci beatae sapiente repellat voluptatum?</h1>
+            <h1>Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam ducimus repellendus accusantium error placeat, maxime tenetur minima excepturi quos porro quidem, non quae assumenda rerum adipisci beatae sapiente repellat voluptatum?</h1>
+            <h1>Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam ducimus repellendus accusantium error placeat, maxime tenetur minima excepturi quos porro quidem, non quae assumenda rerum adipisci beatae sapiente repellat voluptatum?</h1>
+            <h1>Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam ducimus repellendus accusantium error placeat, maxime tenetur minima excepturi quos porro quidem, non quae assumenda rerum adipisci beatae sapiente repellat voluptatum?</h1>
+            <h1>Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam ducimus repellendus accusantium error placeat, maxime tenetur minima excepturi quos porro quidem, non quae assumenda rerum adipisci beatae sapiente repellat voluptatum?</h1>
+            <h1>Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam ducimus repellendus accusantium error placeat, maxime tenetur minima excepturi quos porro quidem, non quae assumenda rerum adipisci beatae sapiente repellat voluptatum?</h1>
+            <h1>Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam ducimus repellendus accusantium error placeat, maxime tenetur minima excepturi quos porro quidem, non quae assumenda rerum adipisci beatae sapiente repellat voluptatum?</h1>
+            <h1>Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam ducimus repellendus accusantium error placeat, maxime tenetur minima excepturi quos porro quidem, non quae assumenda rerum adipisci beatae sapiente repellat voluptatum?</h1>
+            <h1>Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam ducimus repellendus accusantium error placeat, maxime tenetur minima excepturi quos porro quidem, non quae assumenda rerum adipisci beatae sapiente repellat voluptatum?</h1>
+            <h1>Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam ducimus repellendus accusantium error placeat, maxime tenetur minima excepturi quos porro quidem, non quae assumenda rerum adipisci beatae sapiente repellat voluptatum?</h1>
+            <h1>Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam ducimus repellendus accusantium error placeat, maxime tenetur minima excepturi quos porro quidem, non quae assumenda rerum adipisci beatae sapiente repellat voluptatum?</h1>
+            <h1>Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam ducimus repellendus accusantium error placeat, maxime tenetur minima excepturi quos porro quidem, non quae assumenda rerum adipisci beatae sapiente repellat voluptatum?</h1>
+            <h1>Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam ducimus repellendus accusantium error placeat, maxime tenetur minima excepturi quos porro quidem, non quae assumenda rerum adipisci beatae sapiente repellat voluptatum?</h1>
+            <h1>Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam ducimus repellendus accusantium error placeat, maxime tenetur minima excepturi quos porro quidem, non quae assumenda rerum adipisci beatae sapiente repellat voluptatum?</h1>
+            <h1>Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam ducimus repellendus accusantium error placeat, maxime tenetur minima excepturi quos porro quidem, non quae assumenda rerum adipisci beatae sapiente repellat voluptatum?</h1>
+            <h1>Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam ducimus repellendus accusantium error placeat, maxime tenetur minima excepturi quos porro quidem, non quae assumenda rerum adipisci beatae sapiente repellat voluptatum?</h1>
+            <h1>Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam ducimus repellendus accusantium error placeat, maxime tenetur minima excepturi quos porro quidem, non quae assumenda rerum adipisci beatae sapiente repellat voluptatum?</h1>
+        </div>
+    </mat-sidenav-content>
+</mat-sidenav-container>
