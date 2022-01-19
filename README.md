@@ -20,7 +20,7 @@ This project was generated with [Angular CLI](https://github.com/angular/angular
 
         <mat-toolbar>Header Menu</mat-toolbar>
         <mat-nav-list>
-            <a mat-list-item href="">Link 1</a>
+            <a mat-list-item href="" class="active">Link 1</a>
             <a mat-list-item href="">Link 3</a>
             <a mat-list-item href="">Link 2</a>
         </mat-nav-list>
@@ -74,6 +74,11 @@ This project was generated with [Angular CLI](https://github.com/angular/angular
 
 .example-spacer {
     flex: 1;
+}
+
+.active {
+    background: var(--color-accent) !important;
+    color: var(--color-accent-text) !important;
 }
 ```
 

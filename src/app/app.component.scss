@@ -19,3 +19,8 @@
 .example-spacer {
     flex: 1;
 }
+
+.active {
+    background: var(--color-accent) !important;
+    color: var(--color-accent-text) !important;
+}

@@ -47,13 +47,22 @@ $template-angular-navigation-theme-dark: mat.define-dark-theme(
 // that you are using.
 @include mat.all-component-themes($template-angular-navigation-theme);
 
-.dark-theme {
-    // to prevent The same density styles are generated multiple times
-    // use "all-components-colors" instead
-    // This mixin only generates the color styles now.
-    @include mat.all-component-colors($template-angular-navigation-theme-dark);
-}
+:root {
+    --color-primary: #{mat.get-color-from-palette($template-angular-navigation-primary, 500)};
+    --color-accent: #{mat.get-color-from-palette($template-angular-navigation-accent, A200)};
+    --color-accent-text: #{mat.get-color-from-palette($template-angular-navigation-accent, A200-contrast)};
 
+    .dark-theme {
+        // to prevent The same density styles are generated multiple times
+        // use "all-components-colors" instead
+        // This mixin only generates the color styles now.
+        @include mat.all-component-colors($template-angular-navigation-theme-dark);
+
+        --color-primary: #{mat.get-color-from-palette($template-angular-navigation-primary-dark, 500)};
+        --color-accent: #{mat.get-color-from-palette($template-angular-navigation-accent-dark, A200)};
+        --color-accent-text: #{mat.get-color-from-palette($template-angular-navigation-accent-dark, A200-contrast)};
+    }
+}
 /* You can add global styles to this file, and also import other style files */
 
 html,
@@ -67,7 +76,9 @@ body {
 
 // disable zoom-in when entering input fields in mobile
 @media screen and (max-width: 767px) {
-    input, textarea, select {
+    input,
+    textarea,
+    select {
         font-size: 16px !important;
     }
 }
