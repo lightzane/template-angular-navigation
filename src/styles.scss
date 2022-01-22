@@ -14,8 +14,8 @@
 $template-angular-navigation-primary: mat.define-palette(mat.$indigo-palette);
 $template-angular-navigation-accent: mat.define-palette(mat.$pink-palette, A200, A100, A400);
 
-$template-angular-navigation-primary-dark: mat.define-palette(mat.$deep-purple-palette);
-$template-angular-navigation-accent-dark: mat.define-palette(mat.$orange-palette, A200, A100, A400);
+$template-angular-navigation-primary-dark: mat.define-palette(mat.$light-blue-palette);
+// $template-angular-navigation-accent-dark: mat.define-palette(mat.$teal-palette, A200, A100, A400);
 
 // The warn palette is optional (defaults to red).
 $template-angular-navigation-warn: mat.define-palette(mat.$red-palette);
@@ -36,7 +36,7 @@ $template-angular-navigation-theme-dark: mat.define-dark-theme(
     (
         color: (
             primary: $template-angular-navigation-primary-dark,
-            accent: $template-angular-navigation-accent-dark,
+            accent: $template-angular-navigation-accent,
             warn: $template-angular-navigation-warn,
         ),
     )
@@ -59,8 +59,8 @@ $template-angular-navigation-theme-dark: mat.define-dark-theme(
         @include mat.all-component-colors($template-angular-navigation-theme-dark);
 
         --color-primary: #{mat.get-color-from-palette($template-angular-navigation-primary-dark, 500)};
-        --color-accent: #{mat.get-color-from-palette($template-angular-navigation-accent-dark, A200)};
-        --color-accent-text: #{mat.get-color-from-palette($template-angular-navigation-accent-dark, A200-contrast)};
+        --color-accent: #{mat.get-color-from-palette($template-angular-navigation-accent, A200)};
+        --color-accent-text: #{mat.get-color-from-palette($template-angular-navigation-accent, A200-contrast)};
     }
 }
 /* You can add global styles to this file, and also import other style files */
