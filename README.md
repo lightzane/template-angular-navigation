@@ -59,7 +59,7 @@ This project was generated with [Angular CLI](https://github.com/angular/angular
 }
 
 .mat-sidenav {
-    width: 200px;
+    width: 250px;
 }
 
 .mat-sidenav .mat-toolbar {
